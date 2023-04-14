@@ -1,0 +1,108 @@
+/*Colors*/
+/*Typography*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  display: grid;
+  grid-template-areas: "header" "main";
+  width: 100%;
+  height: 100vh;
+  background-color: #0B0D17;
+  font-family: var(--primary-font-family);
+  background-image: url("../assets/home/background-home-mobile.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.header-container {
+  display: grid;
+  grid-area: header;
+  grid-template-columns: 1fr 1fr;
+  align-content: center;
+  width: 100%;
+  height: 78px;
+  padding: 0 24px;
+}
+.header-container__logo {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+}
+.header-container__logo img {
+  width: 100%;
+  height: 100%;
+}
+.header-container__burger-button {
+  display: inline-block;
+  justify-self: end;
+  align-self: center;
+  width: 2.4rem;
+  height: 2.1rem;
+  margin-right: 20px;
+}
+.header-container__burger-button img {
+  width: 100%;
+  height: 100%;
+}
+.header-container__nav-bar {
+  display: grid;
+  grid-template-rows: 78px auto 50%;
+  position: absolute;
+  right: 0;
+  width: 75%;
+  height: 100vh;
+  background-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+}
+.header-container__close-button {
+  display: inline-block;
+  justify-self: end;
+  align-self: center;
+  margin-right: 46px;
+  width: 1.9rem;
+  height: 1.9rem;
+}
+.header-container__close-button img {
+  width: 100%;
+  height: 100%;
+}
+.header-container__ul {
+  display: grid;
+  align-self: center;
+  width: 50%;
+  height: 50%;
+  padding: 0 25px;
+  list-style: none;
+}
+.header-container__item {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 10px;
+  width: 100%;
+  margin-left: 20px;
+  font-size: 1.6rem;
+  font-family: "Barlow Condensed", serif;
+  text-align: start;
+  letter-spacing: 0.27rem;
+}
+.header-container__number {
+  color: #ffffff;
+}
+.header-container__a {
+  color: #ffffff;
+  text-decoration: none;
+}
+.header-container .inactive {
+  display: none;
+}/*# sourceMappingURL=main.css.map */
