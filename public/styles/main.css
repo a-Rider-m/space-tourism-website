@@ -105,4 +105,9 @@ body {
 }
 .header-container .inactive {
   display: none;
-}/*# sourceMappingURL=main.css.map */
+}
+.header-container .jaajaj {
+  display: flex;
+}
+
+/*# sourceMappingURL=main.css.map */
