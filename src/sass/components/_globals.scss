@@ -3,8 +3,8 @@ $color-black: #0B0D17;
 $color-purple: #D0D6F9;
 $color-white: #ffffff;
  /*Typography*/
-$primary-font-family: 'Bellefair', serif;
-$navbar-font-family: 'Barlow Condensed', serif;
+$primary-font-family: 'Barlow', serif;
+$second-font-family: 'Bellefair', serif;
 $font-size-h1: 15rem;
 $font-size-h2: 10rem;
 $font-size-h3: 5.6rem;
@@ -29,15 +29,11 @@ html {
 
 body {
     display: grid;
+    grid-template-rows: 78px auto;
     grid-template-areas: 
     "header"
     "main";
     width: 100%;
     height: 100vh;
-    background-color: #0B0D17;
-    font-family: var(--primary-font-family);
-    background-image: url("../assets/home/background-home-mobile.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    font-family: $primary-font-family;
 }

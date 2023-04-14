@@ -1,0 +1,34 @@
+@import '../components/globals';
+@import '../components/headers';
+
+body {
+    background-image: url("../../../assets/home/background-home-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.space-home {
+    display: grid;
+    grid-area: main;
+    width: 100%;
+    height: 100%;
+    padding: 24px;
+    text-align: center;
+    &__introduction {
+        h4 {
+            color: $color-purple;
+            font-size: $font-size-navtext;
+            font-weight: 400;
+        }
+        h1 {
+            font-size: $font-size-h2;
+            font-family: $second-font-family;
+            color: $color-white;
+        }
+        p {
+            color: $color-purple;
+            font-size: $font-size-body;
+        }
+    }
+}
