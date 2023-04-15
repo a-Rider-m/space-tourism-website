@@ -1,0 +1,8 @@
+@use '../abstracts';
+@use '../components/headers';
+@use '../components/globals';
+@use '../components/main-section';
+
+body {
+    background-image: url("../../../assets/destination/background-destination-mobile.jpg");
+}   
