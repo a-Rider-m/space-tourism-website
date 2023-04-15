@@ -1,0 +1,23 @@
+@use '../abstracts' as a;
+
+.main-section {
+    display: grid;
+    grid-template-rows: auto;
+    h2 {
+        color: a.$primary-color;
+        font-family: a.$barlow-condensed;
+        font-size: a.$mobile-subh1;
+        font-weight: 400;
+        letter-spacing: a.$mobile-space-nav;
+    }
+    h1 {
+        font-size: a.$mobile-h1;
+        font-family: a.$second-font;
+        color: a.$light-color;
+    }
+    p {
+        color: a.$primary-color;
+        font-size: a.$mobile-body;
+        line-height: 2.5rem;
+      }
+}

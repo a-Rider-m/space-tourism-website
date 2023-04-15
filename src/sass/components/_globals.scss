@@ -1,21 +1,4 @@
-/*Colors*/
-$color-black: #0B0D17;
-$color-purple: #D0D6F9;
-$color-white: #ffffff;
- /*Typography*/
-$primary-font-family: 'Barlow', serif;
-$second-font-family: 'Bellefair', serif;
-$font-size-h1: 15rem;
-$font-size-h2: 10rem;
-$font-size-h3: 5.6rem;
-$font-size-h4: 3.2rem;
-$font-size-h5: 2.8rem;
-$font-space-h5: 0.475rem;
-$font-size-subh1: 2.8rem;
-$font-size-subh2: 1.4rem;
-$font-size-navtext: 1.6rem;
-$font-space-navtext: 0.27rem;
-$font-size-body: 1.8rem;
+@use '../abstracts' as a;
 
 * {
     margin: 0;
@@ -35,5 +18,10 @@ body {
     "main";
     width: 100%;
     height: 100vh;
-    font-family: $primary-font-family;
+    font-family: a.$primary-font;
+    @include a.image-body
+}
+
+main {
+    @include a.main-box;
 }

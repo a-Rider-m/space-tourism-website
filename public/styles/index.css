@@ -1,5 +1,7 @@
-/*Colors*/
-/*Typography*/
+/*Desktop sizes*/
+/*Desktop spaces*/
+/*Mobile sizes*/
+/*Mobile spaces*/
 * {
   margin: 0;
   padding: 0;
@@ -17,6 +19,18 @@ body {
   width: 100%;
   height: 100vh;
   font-family: "Barlow", serif;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+main {
+  display: grid;
+  grid-area: main;
+  width: 100%;
+  height: 100%;
+  padding: 24px;
+  text-align: center;
 }
 
 .header-container {
@@ -42,7 +56,6 @@ body {
   align-self: center;
   width: 2.4rem;
   height: 2.1rem;
-  margin-right: 20px;
 }
 .header-container__burger-button img {
   width: 100%;
@@ -92,10 +105,10 @@ body {
   letter-spacing: 0.27rem;
 }
 .header-container__number {
-  color: #ffffff;
+  color: #FFFFFF;
 }
 .header-container__a {
-  color: #ffffff;
+  color: #FFFFFF;
   text-decoration: none;
 }
 .header-container .inactive {
@@ -105,34 +118,47 @@ body {
   display: flex;
 }
 
-body {
-  background-image: url("../../../assets/home/background-home-mobile.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+.button-explore {
+  display: grid;
+  place-self: center;
+  place-items: center;
+  width: 15rem;
+  height: 15rem;
+  background-color: white;
+  justify-self: center;
+  border-radius: 50%;
+}
+.button-explore a {
+  text-decoration: none;
+  color: #0B0D17;
+  font-size: 2rem;
+  letter-spacing: 0.15rem;
 }
 
-.space-home {
+.main-section {
   display: grid;
-  grid-area: main;
-  width: 100%;
-  height: 100%;
-  padding: 24px;
-  text-align: center;
+  grid-template-rows: auto;
 }
-.space-home__introduction h4 {
+.main-section h2 {
   color: #D0D6F9;
+  font-family: "Barlow Condensed", serif;
   font-size: 1.6rem;
   font-weight: 400;
+  letter-spacing: 0.27rem;
 }
-.space-home__introduction h1 {
-  font-size: 10rem;
+.main-section h1 {
+  font-size: 8rem;
   font-family: "Bellefair", serif;
-  color: #ffffff;
+  color: #FFFFFF;
 }
-.space-home__introduction p {
+.main-section p {
   color: #D0D6F9;
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
 }
 
-/*# sourceMappingURL=home.css.map */
+body {
+  background-image: url("../../../assets/home/background-home-mobile.jpg");
+}
+
+/*# sourceMappingURL=index.css.map */

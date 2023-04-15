@@ -1,0 +1,18 @@
+@use '../abstracts' as a;
+
+.button-explore {
+    display: grid;
+    place-self: center;
+    place-items: center;
+    width: 15rem;
+    height: 15rem;
+    background-color: white;
+    justify-self: center;
+    border-radius: 50%;
+    a {
+        text-decoration: none;
+        color: a.$secondary-color;
+        font-size: a.$mobile-h4;
+        letter-spacing: 0.15rem;
+    }
+}

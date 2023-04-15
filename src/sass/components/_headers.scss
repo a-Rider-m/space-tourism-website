@@ -1,3 +1,5 @@
+@use '../abstracts' as a;
+
 .header-container {
     display: grid;
     grid-area: header;
@@ -20,7 +22,6 @@
         align-self: center;
         width: 2.4rem;
         height: 2.1rem;
-        margin-right: 20px;
         img {
             width: 100%;
             height: 100%;
@@ -64,16 +65,16 @@
         gap: 10px;
         width: 100%;
         margin-left: 20px;
-        font-size: $font-size-navtext;
-        font-family: $second-font-family;
+        font-size: a.$mobile-navtext;
+        font-family: a.$second-font;
         text-align: start;
-        letter-spacing: $font-space-navtext;
+        letter-spacing: a.$mobile-space-nav;
     }
     &__number {
-        color: $color-white;
+        color: a.$light-color;
     }
     &__a {
-        color: $color-white;
+        color: a.$light-color;
         text-decoration: none;
     }
     .inactive {
