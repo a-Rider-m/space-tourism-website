@@ -5,24 +5,62 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TECHNOLOGY</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;500&family=Bellefair&display=swap" rel="stylesheet">
+    <link href="./styles/main.css" rel="stylesheet">
 </head>
-<body>
-    <main>
-        <div>
-            <div>
-                <p>03</p>
-                <h2>SPACE LAUNCH 101</h2>
+<body class="body--technology">
+    <header class="header-container">
+        <a href="../index.html" class="logo">
+            <img 
+            src="../assets/shared/logo.svg" 
+            alt="space-tourism">
+        </a>
+        
+        <div class="header-container__burger-button">
+            <img src="../assets/shared/icon-hamburger.svg" alt="burger button">
+        </div> 
+        
+        <nav class="nav-bar inactive">
+            <div class="nav-bar__close-button">
+                <img src="../assets/shared/icon-close.svg" alt="close button">
             </div>
-            <section>
-                <div>
-                    <h2>THE TERMINOLOGY...</h2>
-                    <h1>LAUNCH VEHICLE</h1>
-                    <p>A lauch vehicle or carrier rocket is a rocket-propelled vehicle used to carry a payload from Earth's surface to space, usually to Earth orbit or beyond. Our WEB-X carrier rocket is the most powerful in operation. Standing 150 metres tall, it's quite and awe-inspiring singht on the launch pad!</p>
-                    <div>puntos</div>
-                </div>
-                <img src="" alt="">
-            </section>
+            <ul class="nav-bar__ul">
+                <li class="nav-bar__item">
+                    <h4 class="nav-bar__number">00</h4>
+                    <a class="nav-bar__a" href="../index.html" title="Home">HOME</a></li>
+                <li class="nav-bar__item">
+                    <h4 class="nav-bar__number">01</h4>
+                    <a class="nav-bar__a" href="./destination.html" title="Destination">DESTINATION</a></li>
+                <li class="nav-bar__item">
+                    <h4 class="nav-bar__number">02</h4>
+                    <a class="nav-bar__a" href="./crew.html" title="Crew">CREW</a></li>
+                <li class="nav-bar__item">
+                    <h4 class="nav-bar__number">03</h4>
+                    <a class="nav-bar__a" href="./technology.html" title="Technology">TECHNOLOGY</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-title">
+            <p class="main-title__p">03</p>
+            <h1 class="main-title__h1">SPACE LAUNCH 101</h1>
         </div>
+        <div class="main-image main-image--tech">
+            <img src="../assets/technology/image-launch-vehicle-landscape.jpg" alt="launch vehicle">
+        </div>
+        <section class="box-info">
+            <h2 class="box-info__h2 box-info__h2--tech">THE TERMINOLOGY...</h2>
+            <h3 class="box-info__h3">LAUNCH VEHICLE</h3>
+            <P class="box-info__p">A launch vehicle or carrier rocket is a 
+            rocket-propelled vehicle used to carry a payload 
+            from Earth's surface to space, usually to Earth 
+            orbit or beyond. Our WEB-X carrier rocket is the 
+            most powerful in operation. Standing 150 metres 
+            tall, it's quite an awe-inspiring sight on the launch pad!</P>
+        </section>
     </main>
+    <script src="../src/js/index.js"></script>
 </body>
 </html>

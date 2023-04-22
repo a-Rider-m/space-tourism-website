@@ -4,6 +4,9 @@
     display: grid;
     grid-template-rows: auto;
     justify-items: center;
+    &--destination {
+        gap: 20px;
+    }
     h2 {
         color: a.$primary-color;
         font-family: a.$barlow-condensed;
@@ -39,7 +42,7 @@
         }
     }
     
-    &__image {
+    &__image--destination {
         width: 170px;
         height: 170px;
         img {
@@ -47,13 +50,13 @@
         }
     }
     
-    &__options {
+    &__options--destination {
         display: grid;
         grid-auto-flow: column;
         gap: 15px;
     }
     
-    &__info {
+    &__info--destination {
         display: grid;
         gap: 30px;
         width: 100%;
@@ -73,8 +76,5 @@
                 color: a.$light-color;
             }
         }
-    }
-    &--image {
-        gap: 20px;
     }
 }

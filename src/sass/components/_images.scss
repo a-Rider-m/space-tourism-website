@@ -1,0 +1,18 @@
+.main-image {
+    width: 100%;
+    height: 170px;
+    &--crew{
+        width: 90%;
+        margin: 0 auto;
+        height: 224px;
+        border-bottom: 1px solid #383B4B;
+    }
+    img {
+        height: 100%;
+    }
+    &--tech {
+        img {
+            width: 100%;
+        }
+    }
+}

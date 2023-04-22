@@ -8,11 +8,11 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@400;700&family=Barlow:wght@400;500&family=Bellefair&display=swap" rel="stylesheet">
-    <link href="./public/styles/index.css" rel="stylesheet">
+    <link href="./public/styles/main.css" rel="stylesheet">
 </head>
-<body>
+<body class="body--home">
     <header class="header-container">
-        <a href="./index.html" class="header-container__logo">
+        <a href="../index.html" class="logo">
             <img 
             src="../assets/shared/logo.svg" 
             alt="space-tourism">
@@ -22,39 +22,41 @@
             <img src="../assets/shared/icon-hamburger.svg" alt="burger button">
         </div> 
         
-        <nav class="header-container__nav-bar inactive">
-            <div class="header-container__close-button">
+        <nav class="nav-bar inactive">
+            <div class="nav-bar__close-button">
                 <img src="../assets/shared/icon-close.svg" alt="close button">
             </div>
-            <ul class="header-container__ul">
-                <li class="header-container__item">
-                    <h4 class="header-container__number">00</h4>
-                    <a class="header-container__a" href="./index.html" title="Home">HOME</a></li>
-                <li class="header-container__item">
-                    <h4 class="header-container__number">01</h4>
-                    <a class="header-container__a" href="./public/destination.html" title="Destination">DESTINATION</a></li>
-                <li class="header-container__item">
-                    <h4 class="header-container__number">02</h4>
-                    <a class="header-container__a" href="./public/crew.html" title="Crew">CREW</a></li>
-                <li class="header-container__item">
-                    <h4 class="header-container__number">03</h4>
-                    <a class="header-container__a" href="./public/technology.html" title="Technology">TECHNOLOGY</a></li>
+            <ul class="nav-bar__ul">
+                <li class="nav-bar__item">
+                    <h4 class="nav-bar__number">00</h4>
+                    <a class="nav-bar__a" href="./index.html" title="Home">HOME</a></li>
+                <li class="nav-bar__item">
+                    <h4 class="nav-bar__number">01</h4>
+                    <a class="nav-bar__a" href="./public/destination.html" title="Destination">DESTINATION</a></li>
+                <li class="nav-bar__item">
+                    <h4 class="nav-bar__number">02</h4>
+                    <a class="nav-bar__a" href="./public/crew.html" title="Crew">CREW</a></li>
+                <li class="nav-bar__item">
+                    <h4 class="nav-bar__number">03</h4>
+                    <a class="nav-bar__a" href="./public/technology.html" title="Technology">TECHNOLOGY</a></li>
             </ul>
         </nav>
     </header>
-    <main>
-        <section class="main-section">
-            <h2>SO, YOU WANT TO TRAVEL TO</h2>
-            <h1 translate="no">SPACE</h1>
-            <p>Let's face it; if you want to go to space, you might as well
-                genuinely go to outer space and not hover kind of on the
-                edge of it. Well sit back, and relax because we'll give you a 
-                truly out of this world experience!
-            </p>
-        </section>
-        <div class="button-explore">
-            <a href="./public/destination.html">EXPLORE</a>
-        </div>
+    <main class="main--home">
+            <div class="main-title">
+                <h1 class="main-title__h1 main-title__h1--home">SO, YOU WANT TO TRAVEL TO</h1>
+            </div>
+            <section class="box-info">
+                <h2 class="box-info__h2 box-info__h2--home" translate="no">SPACE</h2>
+                <P class="box-info__p">Let’s face it; if you want to go to space, you might 
+                    as well genuinely go to outer space and not hover 
+                    kind of on the edge of it. Well sit back, and relax 
+                    because we’ll give you a truly out of this world 
+                    experience!</P>
+            </section>
+            <div class="button-explore">
+                <a href="./public/destination.html">EXPLORE</a>
+            </div>
     </main>
     <script src="../src/js/index.js"></script>
 </body>

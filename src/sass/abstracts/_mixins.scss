@@ -1,9 +1,9 @@
 @mixin main-box {
     display: grid;
     grid-area: main;
+    gap: 32px;
     width: 100%;
-    height: 100%;
-    padding: 24px;
+    padding: 24px 0;
     text-align: center;
 }
 

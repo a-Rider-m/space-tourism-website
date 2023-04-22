@@ -1,0 +1,78 @@
+@use '../abstracts' as a;
+
+.box-info {
+    width: 100%;
+    height: auto;
+    padding: 0 24px;
+    color: a.$light-color;
+
+    &__h2 {
+        font-size: a.$mobile-h2;
+        font-family: a.$second-font;
+        font-weight: 400;
+        opacity: 0.25;
+    }
+
+    &__h2--home {
+        margin-bottom: 16px;
+        font-size: a.$mobile-high-text;
+        color: a.$light-color;
+        opacity: 1;
+    }
+
+    &__h2--destination {
+        font-size: a.$mobile-planet-text;
+        color: a.$light-color;
+        opacity: 1;
+    }
+
+    &__h2--tech {
+        font-family: a.$barlow-condensed;
+        font-size: a.$mobile-h2-small;
+        font-weight: 400;
+        letter-spacing: a.$mobile-space-h5;
+        color: a.$primary-color;
+        opacity: 1;
+    }
+
+    &__h3 {
+        margin: 8px 0 16px 0;
+        font-size: a.$mobile-h3;
+        font-family: a.$second-font;
+        font-weight: 400;
+    }
+    &__p {
+        font-size: a.$mobile-body;
+        line-height: a.$mobile-line-height;
+        color: a.$primary-color;
+    }
+}
+
+.box-subinfo {
+    display: grid;
+    gap: 32px;
+    width: 86%;
+    height: auto;
+    margin: auto;
+    padding: 32px 0;
+    border-top: 1px solid #383B4B;
+    
+    &__info {
+        display: grid;
+        gap: 12px;
+    }
+    
+    &__avg-distance {
+        font-size: a.$mobile-h2-small;
+        font-family: a.$barlow-condensed;
+        font-weight: 400;
+        letter-spacing: a.$mobile-space;
+        color: a.$primary-color;
+    }
+
+    &__value {
+        font-size: a.$mobile-h4;
+        font-family: a.$second-font;
+        color: a.$light-color;
+    }
+}

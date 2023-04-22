@@ -1,6 +1,6 @@
 const burgerMobileButton = document.querySelector('.header-container__burger-button');
-const closeMobileButton = document.querySelector('.header-container__close-button');
-const navBar = document.querySelector('.header-container__nav-bar');
+const closeMobileButton = document.querySelector('.nav-bar__close-button');
+const navBar = document.querySelector('.nav-bar');
 
 burgerMobileButton.addEventListener('click', toggleMobileMenu);
 closeMobileButton.addEventListener('click', toggleMobileMenu);
