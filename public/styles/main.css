@@ -26,20 +26,20 @@ body {
 
 .body--home {
   height: 100vh;
-  background-image: url("../../../assets/home/background-home-mobile.jpg");
+  background-image: url("../../assets/home/background-home-mobile.jpg");
 }
 
 .body--destination {
   height: 100%;
-  background-image: url("../../../assets/destination/background-destination-mobile.jpg");
+  background-image: url("../../assets/destination/background-destination-mobile.jpg");
 }
 
 .body--crew {
-  background-image: url("../../../assets/crew/background-crew-mobile.jpg");
+  background-image: url("../../assets/crew/background-crew-mobile.jpg");
 }
 
 .body--technology {
-  background-image: url("../../../assets/technology/background-technology-mobile.jpg");
+  background-image: url("../../assets/technology/background-technology-mobile.jpg");
 }
 
 main {
