@@ -12,7 +12,49 @@
     a {
         text-decoration: none;
         color: a.$secondary-color;
-        font-size: a.$mobile-h4;
+        font-size: a.$mobile-button-text;
         letter-spacing: 0.15rem;
+    }
+}
+
+.buttons-select {
+    display: flex;
+    justify-self: center;
+    gap: 2.6rem;
+    font-size: a.$mobile-h2-small;
+    font-family: a.$barlow-condensed;
+    letter-spacing: a.$mobile-space-h5;
+    color: a.$primary-color;
+    &__button {
+        height: 2.8rem;
+        &--active {
+            color: a.$light-color;
+            border-bottom: 3px a.$light-color solid;
+        }
+    }
+    &__circle {
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: a.$light-color;
+        opacity: 0.17;
+        &--active {
+            opacity: 1;
+        }
+    }
+    &__circle-number {
+        display: grid;
+        width: 40px;
+        height: 40px;
+        border: 1px rgba($color: a.$light-color, $alpha: 0.25) solid;
+        border-radius: 50%;
+        p {
+            font-size: a.$mobile-h2;
+            place-self: center;
+        }
+        &--active {
+            background-color: a.$light-color;
+            color: a.$secondary-color;
+        }
     }
 }
