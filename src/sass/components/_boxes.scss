@@ -7,7 +7,7 @@
     color: a.$light-color;
 
     &__h2 {
-        font-size: a.$mobile-h2;
+        font-size: a.$mobile-font-medium;
         font-family: a.$second-font;
         font-weight: 400;
         opacity: 0.25;
@@ -15,35 +15,35 @@
 
     &__h2--home {
         margin-bottom: 16px;
-        font-size: a.$mobile-high-text;
+        font-size: a.$mobile-font-jumbo;
         color: a.$light-color;
         opacity: 1;
     }
 
     &__h2--destination {
-        font-size: a.$mobile-planet-text;
+        font-size: 5.6rem;
         color: a.$light-color;
         opacity: 1;
     }
 
     &__h2--tech {
         font-family: a.$barlow-condensed;
-        font-size: a.$mobile-h2-small;
+        font-size: a.$mobile-font-small;
         font-weight: 400;
-        letter-spacing: a.$mobile-space-h5;
+        letter-spacing: a.$mobile-letter-space-small;
         color: a.$primary-color;
         opacity: 1;
     }
 
     &__h3 {
         margin: 8px 0 16px 0;
-        font-size: a.$mobile-h3;
+        font-size: 2.4rem;
         font-family: a.$second-font;
         font-weight: 400;
     }
     &__p {
-        font-size: a.$mobile-body;
-        line-height: a.$mobile-line-height;
+        font-size: 1.5rem;
+        line-height: 2.5rem;
         color: a.$primary-color;
     }
     @include a.media-up(md) {
@@ -66,15 +66,15 @@
     }
     
     &__avg-distance {
-        font-size: a.$mobile-h2-small;
+        font-size: a.$mobile-font-small;
         font-family: a.$barlow-condensed;
         font-weight: 400;
-        letter-spacing: a.$mobile-space;
+        letter-spacing: a.$mobile-letter-space-medium;
         color: a.$primary-color;
     }
 
     &__value {
-        font-size: a.$mobile-h4;
+        font-size: 2.8rem;
         font-family: a.$second-font;
         color: a.$light-color;
     }

@@ -83,10 +83,10 @@
         gap: 10px;
         width: 100%;
         margin-left: 20px;
-        font-size: a.$mobile-navtext;
+        font-size: a.$mobile-font-medium;
         font-family: a.$second-font;
         text-align: start;
-        letter-spacing: a.$mobile-space-nav;
+        letter-spacing: a.$mobile-letter-space-medium;
     }
     &__number {
         color: a.$light-color;
@@ -119,7 +119,7 @@
             grid-template-rows: 1fr;
             height: 100%;
             margin: 0;
-            font-size: 1.4rem;
+            font-size: a.$mobile-font-small;
         }
         &__number {
             display: none;

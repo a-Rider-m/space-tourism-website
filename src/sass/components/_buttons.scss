@@ -12,7 +12,7 @@
     a {
         text-decoration: none;
         color: a.$secondary-color;
-        font-size: a.$mobile-button-text;
+        font-size: 2.0rem;
         letter-spacing: 0.15rem;
     }
 }
@@ -21,9 +21,9 @@
     display: flex;
     justify-self: center;
     gap: 2.6rem;
-    font-size: a.$mobile-h2-small;
+    font-size: a.$mobile-font-small;
     font-family: a.$barlow-condensed;
-    letter-spacing: a.$mobile-space-h5;
+    letter-spacing: a.$mobile-letter-space-small;
     color: a.$primary-color;
     &__button {
         height: 2.8rem;
@@ -49,7 +49,7 @@
         border: 1px rgba($color: a.$light-color, $alpha: 0.25) solid;
         border-radius: 50%;
         p {
-            font-size: a.$mobile-h2;
+            font-size: a.$mobile-font-medium;
             place-self: center;
         }
         &--active {

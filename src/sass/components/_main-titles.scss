@@ -7,15 +7,15 @@
     height: 1.6rem;
     gap: 15px;
     &__p {
-        font-size: a.$mobile-h1;
+        font-size: a.$mobile-font-medium;
         color: a.$light-color;
         opacity: 0.25;
     }
     &__h1{
         font-family: a.$barlow-condensed;
-        font-size: a.$mobile-h1;
+        font-size: a.$mobile-font-medium;
         font-weight: 400;
-        letter-spacing: a.$mobile-space;
+        letter-spacing: a.$mobile-letter-space-medium;
         color: a.$light-color;
     }
 
