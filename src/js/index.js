@@ -1,4 +1,4 @@
-const burgerMobileButton = document.querySelector('.header-container__burger-button');
+const burgerMobileButton = document.querySelector('.header__burger-button');
 const closeMobileButton = document.querySelector('.nav-bar__close-button');
 const navBar = document.querySelector('.nav-bar');
 

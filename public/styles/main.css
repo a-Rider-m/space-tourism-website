@@ -23,6 +23,11 @@ body {
   background-position: center;
   background-repeat: no-repeat;
 }
+@media screen and (min-width: 750px) {
+  body {
+    grid-template-rows: 100px auto;
+  }
+}
 
 .body--home {
   background-image: url("../../assets/home/background-home-mobile.jpg");
@@ -54,7 +59,7 @@ main {
   max-height: 450px;
 }
 
-.header-container {
+.header {
   display: grid;
   grid-area: header;
   grid-template-columns: 1fr 1fr;
@@ -62,16 +67,32 @@ main {
   width: 100%;
   padding: 0 24px;
 }
-.header-container__burger-button {
+.header__burger-button {
   display: inline-block;
   justify-self: end;
   align-self: center;
   width: 2.4rem;
   height: 2.1rem;
 }
-.header-container__burger-button img {
+.header__burger-button img {
   width: 100%;
   height: 100%;
+}
+@media screen and (min-width: 750px) {
+  .header {
+    grid-template-columns: 45% 55%;
+    grid-template-rows: 1fr;
+    align-items: center;
+    padding: 0;
+  }
+  .header__burger-button {
+    display: none;
+  }
+  .header .logo {
+    width: 5rem;
+    height: 5rem;
+    margin-left: 3rem;
+  }
 }
 
 .logo {
@@ -135,9 +156,45 @@ main {
   color: #FFFFFF;
   text-decoration: none;
 }
+@media screen and (min-width: 750px) {
+  .nav-bar {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    width: 100%;
+    height: 100%;
+    position: static;
+  }
+  .nav-bar__close-button {
+    display: none;
+  }
+  .nav-bar__ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    padding: 0 3rem;
+  }
+  .nav-bar__item {
+    place-items: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    height: 100%;
+    margin: 0;
+    font-size: 1.4rem;
+  }
+  .nav-bar__number {
+    display: none;
+  }
+}
 
 .inactive {
   display: none;
+}
+@media screen and (min-width: 750px) {
+  .inactive {
+    display: grid;
+  }
 }
 
 .button-explore {
@@ -280,6 +337,11 @@ main {
   font-size: 1.5rem;
   line-height: 2.5rem;
   color: #D0D6F9;
+}
+@media screen and (min-width: 750px) {
+  .box-info {
+    max-width: 444px;
+  }
 }
 
 .box-subinfo {

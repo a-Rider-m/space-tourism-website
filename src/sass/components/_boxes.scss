@@ -46,6 +46,9 @@
         line-height: a.$mobile-line-height;
         color: a.$primary-color;
     }
+    @include a.media-up(md) {
+        max-width: 444px;
+    }
 }
 
 .box-subinfo {
