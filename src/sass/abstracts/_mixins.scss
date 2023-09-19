@@ -1,15 +1,18 @@
+//Brakpoints para los diferentes tamaños de pantalla
 $breakpoints: (
     sm: 320px,
     md: 750px,
     lg: 1024px 
 );
 
+//Function para agregar estilos según el tamaño de pantalla
 @mixin media-up($breakpoint) {
     @media screen and (min-width: map-get($breakpoints, $breakpoint)) {
         @content;
     }
 }
 
+//Estilos generales para el main
 @mixin main-box {
     display: grid;
     grid-area: main;
@@ -19,6 +22,7 @@ $breakpoints: (
     text-align: center;
 }
 
+//Estilos generales para las imagenes de fondo de las diferentes pantallas
 @mixin image-body {
     background-size: cover;
     background-position: center;
