@@ -4,9 +4,10 @@
     display: grid;
     grid-area: header;
     grid-template-columns: 1fr 1fr;
-    align-content: center;
+    align-items: center;
     width: 100%;
     padding: 0 24px;
+
     &__burger-button {
         display: inline-block;
         justify-self: end;
@@ -18,10 +19,21 @@
             height: 100%;
         }
     }
+
+    .logo {
+        display: inline-block;
+        width: 4rem;
+        height: 4rem;
+        img {
+            width: 100%;
+            height: 100%;
+        }
+    }    
+
     @include a.media-up(md) {
         grid-template-columns: 45% 55%;
         grid-template-rows: 1fr;
-        align-items: center;
+        justify-content: space-between;
         padding: 0;
         &__burger-button {
             display: none;
@@ -35,16 +47,6 @@
     }   
 }
 
-.logo {
-    display: inline-block;
-    width: 4rem;
-    height: 4rem;
-    img {
-        width: 100%;
-        height: 100%;
-    }
-}
-
 .nav-bar {
     display: grid;
     grid-template-rows: 78px auto 50%;
@@ -56,6 +58,7 @@
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(20px);
     -webkit-backdrop-filter: blur(20px);
+
     &__close-button {
         display: inline-block;
         justify-self: end;
@@ -63,11 +66,12 @@
         margin-right: 24px;
         width: 1.9rem;
         height: 1.9rem;
-            img {
-                width: 100%;
-                height: 100%;
-            }
-        }    
+        img {
+            width: 100%;
+            height: 100%;
+        } 
+    }   
+     
     &__ul {
             display: grid;
             align-self: center;
@@ -76,7 +80,8 @@
             height: 50%;
             padding: 0 25px;
             list-style: none;
-        }
+    }
+    
     &__item {
         display: grid;
         grid-template-columns: auto 1fr;
@@ -84,52 +89,52 @@
         width: 100%;
         margin-left: 20px;
         font-size: a.$mobile-font-medium;
-        font-family: a.$second-font;
+        font-family: a.$barlow-condensed;
         text-align: start;
         letter-spacing: a.$mobile-letter-space-medium;
     }
+
     &__number {
         color: a.$light-color;
     }
+
     &__a {
         color: a.$light-color;
         text-decoration: none;
 
     }
+
     @include a.media-up(md) {
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 1fr;
+        display: flex;
         width: 100%;
         height: 100%;
+        justify-content: center;
         position: static;
+
         &__close-button {
             display: none;
         }
+
         &__ul {
             display: flex;
-            align-items: center;
+            justify-content: space-evenly;
             width: 100%;
             height: 100%;
-            padding: 0 3rem;
+            padding: 0 30px;
         }
+
         &__item {
-            place-items: center;
-            grid-template-columns: 1fr;
-            grid-template-rows: 1fr;
-            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: auto;
             margin: 0;
+            height: 100%;
             font-size: a.$mobile-font-small;
         }
+
         &__number {
             display: none;
         }
     }
 }
-
-.inactive {
-    display: none;
-    @include a.media-up(md) {
-        display: grid;
-    }
-}    
