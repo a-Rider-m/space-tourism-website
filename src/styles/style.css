@@ -96,6 +96,7 @@ main {
   .header .logo {
     width: 5rem;
     height: 5rem;
+    margin: auto 0;
     margin-left: 3rem;
   }
 }
