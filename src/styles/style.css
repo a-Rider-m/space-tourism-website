@@ -227,7 +227,7 @@ main {
   }
 }
 
-.planet-select {
+.buttons-select {
   display: flex;
   justify-self: center;
   gap: 2.6rem;
@@ -236,36 +236,40 @@ main {
   letter-spacing: 0.23rem;
   color: #D0D6F9;
 }
-.planet-select__button {
+.buttons-select__button {
   height: 2.8rem;
 }
-.planet-select__circle {
+.buttons-select__button--active {
+  color: #FFFFFF;
+  border-bottom: 3px #FFFFFF solid;
+}
+.buttons-select__circle {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #FFFFFF;
   opacity: 0.17;
 }
-.planet-select__circle--active {
+.buttons-select__circle--active {
   opacity: 1;
 }
-.planet-select__circle-number {
+.buttons-select__circle-number {
   display: grid;
   width: 40px;
   height: 40px;
   border: 1px rgba(255, 255, 255, 0.25) solid;
   border-radius: 50%;
 }
-.planet-select__circle-number p {
+.buttons-select__circle-number p {
   font-size: 1.6rem;
   place-self: center;
 }
-.planet-select__circle-number--active {
+.buttons-select__circle-number--active {
   background-color: #FFFFFF;
   color: #0B0D17;
 }
 @media screen and (min-width: 768px) {
-  .planet-select {
+  .buttons-select {
     font-size: 1.6rem;
   }
 }
@@ -432,11 +436,6 @@ main {
     border-bottom: 3px solid white;
   }
 }
-.planet-select--active {
-  color: #FFFFFF;
-  border-bottom: 3px #FFFFFF solid;
-}
-
 .inactive {
   display: none;
 }

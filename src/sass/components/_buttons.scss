@@ -28,7 +28,7 @@
     }
 }
 
-.planet-select {
+.buttons-select {
     display: flex;
     justify-self: center;
     gap: 2.6rem;
@@ -38,6 +38,10 @@
     color: a.$primary-color;
     &__button {
         height: 2.8rem;
+        &--active {
+            color: a.$light-color;
+            border-bottom: 3px a.$light-color solid;
+        }
     }
     &__circle {
         width: 10px;
