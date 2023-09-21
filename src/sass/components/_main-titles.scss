@@ -25,11 +25,17 @@
     
     @include a.media-up(md){
         justify-self: start;
+        margin-left: 39px;
+        margin-bottom: 28px;
         
         &--home {
             justify-self: center;
         }
-        
+
+        &__p {
+            font-size: 20px;
+        }
+
         &__h1 {
             font-size: 20px;
         }

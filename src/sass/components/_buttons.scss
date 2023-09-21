@@ -28,7 +28,7 @@
     }
 }
 
-.buttons-select {
+.planet-select {
     display: flex;
     justify-self: center;
     gap: 2.6rem;
@@ -38,10 +38,6 @@
     color: a.$primary-color;
     &__button {
         height: 2.8rem;
-        &--active {
-            color: a.$light-color;
-            border-bottom: 3px a.$light-color solid;
-        }
     }
     &__circle {
         width: 10px;
@@ -67,5 +63,9 @@
             background-color: a.$light-color;
             color: a.$secondary-color;
         }
+    }
+
+    @include a.media-up(md) {
+        font-size: 1.6rem;
     }
 }

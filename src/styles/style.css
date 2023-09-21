@@ -53,6 +53,11 @@ main {
   padding: 24px 0;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  main {
+    padding: 40px 0;
+  }
+}
 
 .main--home {
   max-height: 550px;
@@ -222,7 +227,7 @@ main {
   }
 }
 
-.buttons-select {
+.planet-select {
   display: flex;
   justify-self: center;
   gap: 2.6rem;
@@ -231,37 +236,38 @@ main {
   letter-spacing: 0.23rem;
   color: #D0D6F9;
 }
-.buttons-select__button {
+.planet-select__button {
   height: 2.8rem;
 }
-.buttons-select__button--active {
-  color: #FFFFFF;
-  border-bottom: 3px #FFFFFF solid;
-}
-.buttons-select__circle {
+.planet-select__circle {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #FFFFFF;
   opacity: 0.17;
 }
-.buttons-select__circle--active {
+.planet-select__circle--active {
   opacity: 1;
 }
-.buttons-select__circle-number {
+.planet-select__circle-number {
   display: grid;
   width: 40px;
   height: 40px;
   border: 1px rgba(255, 255, 255, 0.25) solid;
   border-radius: 50%;
 }
-.buttons-select__circle-number p {
+.planet-select__circle-number p {
   font-size: 1.6rem;
   place-self: center;
 }
-.buttons-select__circle-number--active {
+.planet-select__circle-number--active {
   background-color: #FFFFFF;
   color: #0B0D17;
+}
+@media screen and (min-width: 768px) {
+  .planet-select {
+    font-size: 1.6rem;
+  }
 }
 
 .main-image {
@@ -279,6 +285,11 @@ main {
 }
 .main-image--tech img {
   width: 100%;
+}
+@media screen and (min-width: 768px) {
+  .main-image {
+    height: 300px;
+  }
 }
 
 .main-title {
@@ -305,9 +316,14 @@ main {
 @media screen and (min-width: 768px) {
   .main-title {
     justify-self: start;
+    margin-left: 39px;
+    margin-bottom: 28px;
   }
   .main-title--home {
     justify-self: center;
+  }
+  .main-title__p {
+    font-size: 20px;
   }
   .main-title__h1 {
     font-size: 20px;
@@ -362,13 +378,19 @@ main {
     max-width: 444px;
     padding: 0;
   }
-  .box-info__h2 {
+  .box-info--destination {
+    max-width: 600px;
+  }
+  .box-info__h2--home {
     font-size: 150px;
     letter-spacing: 0;
     text-align: start;
   }
+  .box-info__h2--destination {
+    font-size: 8rem;
+  }
   .box-info__p {
-    font-size: 15px;
+    font-size: 16px;
     line-height: 2.8rem;
   }
 }
@@ -398,12 +420,23 @@ main {
   font-family: "Bellefair", serif;
   color: #FFFFFF;
 }
+@media screen and (min-width: 768px) {
+  .box-subinfo {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
+}
 
 @media screen and (min-width: 768px) {
   .active-screen {
     border-bottom: 3px solid white;
   }
 }
+.planet-select--active {
+  color: #FFFFFF;
+  border-bottom: 3px #FFFFFF solid;
+}
+
 .inactive {
   display: none;
 }

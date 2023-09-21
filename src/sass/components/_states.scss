@@ -6,6 +6,11 @@
     }
 }
 
+.planet-select--active {
+    color: a.$light-color;
+    border-bottom: 3px a.$light-color solid;
+}
+
 .inactive {
     display: none;
     @include a.media-up(md) {
