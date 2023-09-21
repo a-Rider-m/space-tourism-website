@@ -47,7 +47,20 @@
         color: a.$primary-color;
     }
     @include a.media-up(md) {
+        justify-self: center;
         max-width: 444px;
+        padding: 0;
+
+        &__h2 {
+            font-size: 150px;
+            letter-spacing: 0;
+            text-align: start;
+        }
+
+        &__p {
+            font-size: 15px;
+            line-height: 2.8rem;
+        }
     }
 }
 

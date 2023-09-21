@@ -13,7 +13,8 @@ body {
   grid-template-rows: 78px auto;
   grid-template-areas: "header" "main";
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   font-family: "Barlow", serif;
   background-size: cover;
   background-position: center;
@@ -30,7 +31,6 @@ body {
 }
 
 .body--destination {
-  height: 100%;
   background-image: url("../../assets/destination/background-destination-mobile.jpg");
 }
 
@@ -45,14 +45,23 @@ body {
 main {
   display: grid;
   grid-area: main;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(auto, auto);
   gap: 32px;
+  justify-content: center;
   width: 100%;
   padding: 24px 0;
   text-align: center;
 }
 
 .main--home {
-  max-height: 530px;
+  max-height: 550px;
+}
+@media screen and (min-width: 768px) {
+  .main--home {
+    margin-top: 80px;
+    max-height: 700px;
+  }
 }
 
 .header {
@@ -188,17 +197,29 @@ main {
   display: grid;
   place-self: center;
   place-items: center;
-  width: 15rem;
-  height: 15rem;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
   background-color: white;
   justify-self: center;
   border-radius: 50%;
 }
 .button-explore a {
   text-decoration: none;
-  color: #0B0D17;
   font-size: 2rem;
+  font-family: "Bellefair", serif;
   letter-spacing: 0.15rem;
+  color: #0B0D17;
+}
+@media screen and (min-width: 768px) {
+  .button-explore {
+    width: 242px;
+    height: 242px;
+    margin-top: 120px;
+  }
+  .button-explore a {
+    font-size: 3.2rem;
+  }
 }
 
 .buttons-select {
@@ -264,7 +285,6 @@ main {
   display: flex;
   justify-self: center;
   width: auto;
-  height: 1.6rem;
   gap: 15px;
 }
 .main-title__p {
@@ -281,6 +301,17 @@ main {
 }
 .main-title__h1--home {
   color: #D0D6F9;
+}
+@media screen and (min-width: 768px) {
+  .main-title {
+    justify-self: start;
+  }
+  .main-title--home {
+    justify-self: center;
+  }
+  .main-title__h1 {
+    font-size: 20px;
+  }
 }
 
 .box-info {
@@ -327,7 +358,18 @@ main {
 }
 @media screen and (min-width: 768px) {
   .box-info {
+    justify-self: center;
     max-width: 444px;
+    padding: 0;
+  }
+  .box-info__h2 {
+    font-size: 150px;
+    letter-spacing: 0;
+    text-align: start;
+  }
+  .box-info__p {
+    font-size: 15px;
+    line-height: 2.8rem;
   }
 }
 
