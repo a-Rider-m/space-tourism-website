@@ -54,6 +54,17 @@
             max-width: 600px;
         }
 
+        &--crew {
+            grid-area: box-info;
+            .box-info__h2 {
+                font-size: 2.4rem;
+            }
+        
+            .box-info__h3 {
+                font-size: 4rem;
+            }
+        }
+
         &__h2--home {
             font-size: 150px;
             letter-spacing: 0;
@@ -70,6 +81,7 @@
         }
     }
 }
+
 
 .box-subinfo {
     display: grid;

@@ -54,3 +54,15 @@ main {
         max-height: 700px;
     }
 }
+
+.main--crew {
+    @include a.media-up(md) {
+        grid-template-rows: 60px auto 20px auto;
+        grid-template-areas: 
+        'main-title'
+        'box-info'
+        'buttons'
+        'main-image';
+        padding: 40px 0 0 0;
+    }
+}

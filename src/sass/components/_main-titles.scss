@@ -32,6 +32,10 @@
             justify-self: center;
         }
 
+        &--crew {
+            grid-area: main-title;
+        }
+
         &__p {
             font-size: 20px;
         }

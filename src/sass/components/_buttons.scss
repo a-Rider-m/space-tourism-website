@@ -71,5 +71,8 @@
 
     @include a.media-up(md) {
         font-size: 1.6rem;
+        &--crew {
+            grid-area: buttons;
+        }
     }
 }
