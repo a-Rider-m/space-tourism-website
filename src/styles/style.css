@@ -283,6 +283,10 @@ main {
   .buttons-select--crew {
     grid-area: buttons;
   }
+  .buttons-select__circle-number {
+    width: 60px;
+    height: 60px;
+  }
 }
 
 .main-image {
@@ -433,6 +437,9 @@ main {
   .box-info__p {
     font-size: 16px;
     line-height: 2.8rem;
+  }
+  .box-info__h2--tech {
+    font-size: 1.6rem;
   }
 }
 
