@@ -13,13 +13,14 @@ body {
   grid-template-rows: 78px auto;
   grid-template-areas: "header" "main";
   width: 100%;
-  height: 100vh;
+  height: 100%;
+  min-height: 100vh;
   font-family: "Barlow", serif;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   body {
     grid-template-rows: 100px auto;
   }
@@ -30,7 +31,6 @@ body {
 }
 
 .body--destination {
-  height: 100%;
   background-image: url("../../assets/destination/background-destination-mobile.jpg");
 }
 
@@ -45,14 +45,36 @@ body {
 main {
   display: grid;
   grid-area: main;
+  grid-template-columns: 1fr;
+  grid-auto-rows: minmax(auto, auto);
   gap: 32px;
+  justify-content: center;
   width: 100%;
   padding: 24px 0;
   text-align: center;
 }
+@media screen and (min-width: 768px) {
+  main {
+    padding: 40px 0;
+  }
+}
 
 .main--home {
-  max-height: 530px;
+  max-height: 550px;
+}
+@media screen and (min-width: 768px) {
+  .main--home {
+    margin-top: 80px;
+    max-height: 700px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .main--crew {
+    grid-template-rows: 60px auto 20px auto;
+    grid-template-areas: "main-title" "box-info" "buttons" "main-image";
+    padding: 40px 0 0 0;
+  }
 }
 
 .header {
@@ -74,11 +96,20 @@ main {
   width: 100%;
   height: 100%;
 }
-@media screen and (min-width: 750px) {
+.header .logo {
+  display: inline-block;
+  width: 4rem;
+  height: 4rem;
+}
+.header .logo img {
+  width: 100%;
+  height: 100%;
+}
+@media screen and (min-width: 768px) {
   .header {
     grid-template-columns: 45% 55%;
     grid-template-rows: 1fr;
-    align-items: center;
+    justify-content: space-between;
     padding: 0;
   }
   .header__burger-button {
@@ -87,18 +118,9 @@ main {
   .header .logo {
     width: 5rem;
     height: 5rem;
+    margin: auto 0;
     margin-left: 3rem;
   }
-}
-
-.logo {
-  display: inline-block;
-  width: 4rem;
-  height: 4rem;
-}
-.logo img {
-  width: 100%;
-  height: 100%;
 }
 
 .nav-bar {
@@ -141,7 +163,7 @@ main {
   width: 100%;
   margin-left: 20px;
   font-size: 1.6rem;
-  font-family: "Bellefair", serif;
+  font-family: "Barlow Condensed", serif;
   text-align: start;
   letter-spacing: 0.27rem;
 }
@@ -152,13 +174,12 @@ main {
   color: #FFFFFF;
   text-decoration: none;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .nav-bar {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
+    display: flex;
     width: 100%;
     height: 100%;
+    justify-content: center;
     position: static;
   }
   .nav-bar__close-button {
@@ -166,17 +187,18 @@ main {
   }
   .nav-bar__ul {
     display: flex;
-    align-items: center;
+    justify-content: space-evenly;
     width: 100%;
     height: 100%;
-    padding: 0 3rem;
+    padding: 0 30px;
   }
   .nav-bar__item {
-    place-items: center;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
     margin: 0;
+    height: 100%;
     font-size: 1.4rem;
   }
   .nav-bar__number {
@@ -184,30 +206,33 @@ main {
   }
 }
 
-.inactive {
-  display: none;
-}
-@media screen and (min-width: 750px) {
-  .inactive {
-    display: grid;
-  }
-}
-
 .button-explore {
   display: grid;
   place-self: center;
   place-items: center;
-  width: 15rem;
-  height: 15rem;
+  width: 150px;
+  height: 150px;
+  margin-top: 20px;
   background-color: white;
   justify-self: center;
   border-radius: 50%;
 }
 .button-explore a {
   text-decoration: none;
-  color: #0B0D17;
   font-size: 2rem;
+  font-family: "Bellefair", serif;
   letter-spacing: 0.15rem;
+  color: #0B0D17;
+}
+@media screen and (min-width: 768px) {
+  .button-explore {
+    width: 242px;
+    height: 242px;
+    margin-top: 120px;
+  }
+  .button-explore a {
+    font-size: 3.2rem;
+  }
 }
 
 .buttons-select {
@@ -251,6 +276,18 @@ main {
   background-color: #FFFFFF;
   color: #0B0D17;
 }
+@media screen and (min-width: 768px) {
+  .buttons-select {
+    font-size: 1.6rem;
+  }
+  .buttons-select--crew {
+    grid-area: buttons;
+  }
+  .buttons-select__circle-number {
+    width: 60px;
+    height: 60px;
+  }
+}
 
 .main-image {
   width: 100%;
@@ -268,12 +305,30 @@ main {
 .main-image--tech img {
   width: 100%;
 }
+@media screen and (min-width: 768px) {
+  .main-image {
+    height: 300px;
+  }
+  .main-image--crew {
+    display: flex;
+    justify-self: end;
+    justify-content: center;
+    align-items: end;
+    width: 100%;
+    height: 100%;
+    grid-area: main-image;
+    border-bottom: none;
+  }
+  .main-image--crew img {
+    height: 50vh;
+    object-fit: cover;
+  }
+}
 
 .main-title {
   display: flex;
   justify-self: center;
   width: auto;
-  height: 1.6rem;
   gap: 15px;
 }
 .main-title__p {
@@ -290,6 +345,25 @@ main {
 }
 .main-title__h1--home {
   color: #D0D6F9;
+}
+@media screen and (min-width: 768px) {
+  .main-title {
+    justify-self: start;
+    margin-left: 39px;
+    margin-bottom: 28px;
+  }
+  .main-title--home {
+    justify-self: center;
+  }
+  .main-title--crew {
+    grid-area: main-title;
+  }
+  .main-title__p {
+    font-size: 20px;
+  }
+  .main-title__h1 {
+    font-size: 20px;
+  }
 }
 
 .box-info {
@@ -334,9 +408,38 @@ main {
   line-height: 2.5rem;
   color: #D0D6F9;
 }
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 768px) {
   .box-info {
+    justify-self: center;
     max-width: 444px;
+    padding: 0;
+  }
+  .box-info--destination {
+    max-width: 600px;
+  }
+  .box-info--crew {
+    grid-area: box-info;
+  }
+  .box-info--crew .box-info__h2 {
+    font-size: 2.4rem;
+  }
+  .box-info--crew .box-info__h3 {
+    font-size: 4rem;
+  }
+  .box-info__h2--home {
+    font-size: 150px;
+    letter-spacing: 0;
+    text-align: start;
+  }
+  .box-info__h2--destination {
+    font-size: 8rem;
+  }
+  .box-info__p {
+    font-size: 16px;
+    line-height: 2.8rem;
+  }
+  .box-info__h2--tech {
+    font-size: 1.6rem;
   }
 }
 
@@ -364,6 +467,12 @@ main {
   font-size: 2.8rem;
   font-family: "Bellefair", serif;
   color: #FFFFFF;
+}
+@media screen and (min-width: 768px) {
+  .box-subinfo {
+    grid-template-columns: 1fr 1fr;
+    gap: 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
