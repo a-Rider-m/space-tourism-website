@@ -103,6 +103,20 @@ main {
     padding: 40px 0;
   }
 }
+@media screen and (min-width: 1024px) {
+  main {
+    justify-self: center;
+    align-self: center;
+    grid-template-areas: "lefttop right" "left right";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 22px auto;
+    gap: 24px;
+    align-content: center;
+    max-width: 1444px;
+    padding: 0 165px;
+    text-align: start;
+  }
+}
 
 .main--home {
   max-height: 550px;
@@ -253,7 +267,7 @@ main {
     width: auto;
     margin: 0;
     height: 100%;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
   }
   .nav-bar__number {
     display: none;
@@ -304,10 +318,19 @@ main {
   .button-explore {
     width: 242px;
     height: 242px;
-    margin-top: 120px;
   }
   .button-explore a {
     font-size: 3.2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .button-explore {
+    width: 272px;
+    height: 272px;
+    grid-area: right;
+    justify-self: end;
+    align-self: end;
+    margin-top: 0;
   }
 }
 
@@ -435,10 +458,20 @@ main {
     grid-area: main-title;
   }
   .main-title__p {
-    font-size: 20px;
+    font-size: 2rem;
   }
   .main-title__h1 {
-    font-size: 20px;
+    font-size: 2rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-title {
+    justify-self: start;
+    grid-area: lefttop;
+    margin-left: 0;
+  }
+  .main-title__h1 {
+    font-size: 2.8rem;
   }
 }
 
@@ -511,11 +544,20 @@ main {
     font-size: 8rem;
   }
   .box-info__p {
-    font-size: 16px;
+    font-size: 1.6rem;
     line-height: 2.8rem;
   }
   .box-info__h2--tech {
     font-size: 1.6rem;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .box-info {
+    justify-self: start;
+    grid-area: left;
+  }
+  .box-info__p {
+    font-size: 2rem;
   }
 }
 

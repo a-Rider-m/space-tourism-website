@@ -21,10 +21,18 @@
     @include a.media-up(md) {
         width: 242px;
         height: 242px;
-        margin-top: 120px;
         a {
             font-size: 3.2rem;
         }
+    }
+
+    @include a.media-up(lg) {
+        width: 272px;
+        height: 272px;
+        grid-area: right;
+        justify-self: end;
+        align-self: end;
+        margin-top: 0;
     }
 }
 

@@ -76,12 +76,21 @@
         }
 
         &__p {
-            font-size: 16px;
+            font-size: a.$tablet-font-small;
             line-height: a.$tablet-font-medium;
         }
 
         &__h2--tech {
             font-size: a.$tablet-font-small;
+        }
+    }
+
+    @include a.media-up(lg) {
+        justify-self: start;
+        grid-area: left;
+
+        &__p {
+            font-size: a.$desktop-font-small;
         }
     }
 }

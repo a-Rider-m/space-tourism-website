@@ -26,6 +26,20 @@ $breakpoints: (
     @include media-up(md) {
         padding: 40px 0;
     }
+    @include media-up(lg) {
+        justify-self: center;
+        align-self: center;
+        grid-template-areas: 
+        'lefttop right'
+        'left right';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 22px auto;
+        gap: 24px;
+        align-content: center;
+        max-width: 1444px;
+        padding: 0 165px;
+        text-align: start;
+    }
 }
 
 //Estilos generales para las imagenes de fondo de las diferentes pantallas
