@@ -72,16 +72,16 @@
         }
 
         &__h2--destination {
-            font-size: 8rem;
+            font-size: a.$tablet-font-jumbo;
         }
 
         &__p {
             font-size: 16px;
-            line-height: 2.8rem;
+            line-height: a.$tablet-font-medium;
         }
 
         &__h2--tech {
-            font-size: 1.6rem;
+            font-size: a.$tablet-font-small;
         }
     }
 }

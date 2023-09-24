@@ -70,7 +70,7 @@
     }
 
     @include a.media-up(md) {
-        font-size: 1.6rem;
+        font-size: a.$tablet-font-small;
         &--crew {
             grid-area: buttons;
         }
