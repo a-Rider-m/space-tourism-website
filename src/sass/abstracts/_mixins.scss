@@ -1,7 +1,7 @@
 //Brakpoints para los diferentes tamaños de pantalla
 $breakpoints: (
     sm: 320px,
-    md: 750px,
+    md: 768px,
     lg: 1024px 
 );
 
@@ -16,10 +16,16 @@ $breakpoints: (
 @mixin main-box {
     display: grid;
     grid-area: main;
+    grid-template-columns: 1fr;
+    grid-auto-rows: minmax(auto, auto);
     gap: 32px;
+    justify-content: center;
     width: 100%;
     padding: 24px 0;
     text-align: center;
+    @include media-up(md) {
+        padding: 40px 0;
+    }
 }
 
 //Estilos generales para las imagenes de fondo de las diferentes pantallas
@@ -28,4 +34,3 @@ $breakpoints: (
     background-position: center;
     background-repeat: no-repeat;
 }
-

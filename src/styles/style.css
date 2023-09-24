@@ -475,4 +475,18 @@ main {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .active-screen {
+    border-bottom: 3px solid white;
+  }
+}
+.inactive {
+  display: none;
+}
+@media screen and (min-width: 768px) {
+  .inactive {
+    display: flex;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */

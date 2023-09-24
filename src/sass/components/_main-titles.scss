@@ -4,7 +4,6 @@
     display: flex;
     justify-self: center;
     width: auto;
-    height: 1.6rem;
     gap: 15px;
     &__p {
         font-size: a.$mobile-font-medium;
@@ -21,5 +20,29 @@
 
     &__h1--home {
         color: a.$primary-color;
+    }
+    
+    
+    @include a.media-up(md){
+        justify-self: start;
+        margin-left: 39px;
+        margin-bottom: 28px;
+        
+        &--home {
+            justify-self: center;
+        }
+
+        &--crew {
+            grid-area: main-title;
+        }
+
+        &__p {
+            font-size: 20px;
+        }
+
+        &__h1 {
+            font-size: 20px;
+        }
+
     }
 }

@@ -47,9 +47,45 @@
         color: a.$primary-color;
     }
     @include a.media-up(md) {
+        justify-self: center;
         max-width: 444px;
+        padding: 0;
+        &--destination {
+            max-width: 600px;
+        }
+
+        &--crew {
+            grid-area: box-info;
+            .box-info__h2 {
+                font-size: 2.4rem;
+            }
+        
+            .box-info__h3 {
+                font-size: 4rem;
+            }
+        }
+
+        &__h2--home {
+            font-size: 150px;
+            letter-spacing: 0;
+            text-align: start;
+        }
+
+        &__h2--destination {
+            font-size: a.$tablet-font-jumbo;
+        }
+
+        &__p {
+            font-size: 16px;
+            line-height: a.$tablet-font-medium;
+        }
+
+        &__h2--tech {
+            font-size: a.$tablet-font-small;
+        }
     }
 }
+
 
 .box-subinfo {
     display: grid;
@@ -77,5 +113,10 @@
         font-size: 2.8rem;
         font-family: a.$second-font;
         color: a.$light-color;
+    }
+
+    @include a.media-up(md) {
+        grid-template-columns: 1fr 1fr;
+        gap: 0;
     }
 }

@@ -1,0 +1,14 @@
+@use '../abstracts' as a;
+
+@include a.media-up(md) {
+    .active-screen {
+        border-bottom: 3px solid white;
+    }
+}
+
+.inactive {
+    display: none;
+    @include a.media-up(md) {
+        display: flex;
+    }
+}    
