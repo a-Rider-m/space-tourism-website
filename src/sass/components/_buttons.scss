@@ -95,7 +95,17 @@
     }
 
     @include a.media-up(lg) {
+        &__circle {
+            width: 15px;
+            height: 15px;
+        }
+        
         &--destination {
+            justify-self: start;
+            grid-area: select;
+        }
+
+        &--crew {
             justify-self: start;
             grid-area: select;
         }

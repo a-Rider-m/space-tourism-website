@@ -105,6 +105,7 @@ main {
 }
 @media screen and (min-width: 1024px) {
   main {
+    place-self: center;
     max-width: 1444px;
     padding: 0 165px;
     text-align: start;
@@ -122,8 +123,6 @@ main {
 }
 @media screen and (min-width: 1024px) {
   .main--home {
-    justify-self: center;
-    align-self: center;
     grid-template-areas: "lefttop right" "left right";
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 22px auto;
@@ -134,7 +133,6 @@ main {
 
 @media screen and (min-width: 1024px) {
   .main--destination {
-    place-self: center;
     grid-template-columns: 1fr 472px;
     grid-template-rows: 98px 34px 250px 130px;
     grid-template-areas: "title title" "moon select" "moon info" "moon subinfo";
@@ -147,6 +145,18 @@ main {
     grid-template-rows: 60px auto 20px auto;
     grid-template-areas: "main-title" "box-info" "buttons" "main-image";
     padding: 40px 0 0 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main--crew {
+    column-gap: 110px;
+    max-height: 80vh;
+    align-self: end;
+    align-content: end;
+    padding: 0 135px 0 165px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+    grid-template-areas: "title img" "info img" "select img";
   }
 }
 
@@ -408,7 +418,15 @@ main {
   }
 }
 @media screen and (min-width: 1024px) {
+  .buttons-select__circle {
+    width: 15px;
+    height: 15px;
+  }
   .buttons-select--destination {
+    justify-self: start;
+    grid-area: select;
+  }
+  .buttons-select--crew {
     justify-self: start;
     grid-area: select;
   }
@@ -456,6 +474,12 @@ main {
     justify-content: center;
     height: 445px;
     grid-area: moon;
+  }
+  .main-image--crew {
+    grid-area: img;
+  }
+  .main-image--crew img {
+    height: 100%;
   }
 }
 
@@ -512,6 +536,9 @@ main {
     font-size: 2.8rem;
   }
   .main-title--destination {
+    grid-area: title;
+  }
+  .main-title--crew {
     grid-area: title;
   }
 }
@@ -594,6 +621,7 @@ main {
 }
 @media screen and (min-width: 1024px) {
   .box-info {
+    max-width: none;
     justify-self: start;
     grid-area: left;
   }
@@ -605,6 +633,15 @@ main {
   }
   .box-info__h2--destination {
     font-size: 10rem;
+  }
+  .box-info--crew {
+    grid-area: info;
+  }
+  .box-info--crew .box-info__h2 {
+    font-size: 3.2rem;
+  }
+  .box-info--crew .box-info__h3 {
+    font-size: 5.6rem;
   }
 }
 

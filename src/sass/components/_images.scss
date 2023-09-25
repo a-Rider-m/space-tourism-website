@@ -45,5 +45,12 @@
             height: 445px;
             grid-area: moon;
         }
+
+        &--crew {
+            grid-area: img;
+            img {
+                height: 100%;
+            }
+        }
     }
 }

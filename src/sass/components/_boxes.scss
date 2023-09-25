@@ -86,6 +86,7 @@
     }
 
     @include a.media-up(lg) {
+        max-width: none;
         justify-self: start;
         grid-area: left;
 
@@ -99,6 +100,18 @@
 
         &__h2--destination {
             font-size: 10rem;
+        }
+
+        &--crew {
+            grid-area: info;
+
+            .box-info__h2 {
+                font-size: 3.2rem;
+            }
+
+            .box-info__h3 {
+                font-size: 5.6rem;
+            }
         }
     }
 }

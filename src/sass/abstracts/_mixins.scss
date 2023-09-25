@@ -27,6 +27,7 @@ $breakpoints: (
         padding: 40px 0;
     }
     @include media-up(lg) {
+        place-self: center;
         max-width: 1444px;
         padding: 0 165px;
         text-align: start;

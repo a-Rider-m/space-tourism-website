@@ -82,8 +82,6 @@ main {
     }
 
     @include a.media-up(lg) {
-        justify-self: center;
-        align-self: center;
         grid-template-areas: 
         'lefttop right'
         'left right';
@@ -96,7 +94,6 @@ main {
 
 .main--destination {
     @include a.media-up(lg) {
-        place-self: center;
         grid-template-columns: 1fr 472px;
         grid-template-rows: 98px 34px 250px 130px;
         grid-template-areas: 
@@ -117,5 +114,19 @@ main {
         'buttons'
         'main-image';
         padding: 40px 0 0 0;
+    }
+
+    @include a.media-up(lg) {
+        column-gap: 110px;
+        max-height: 80vh;
+        align-self: end;
+        align-content: end;
+        padding: 0 135px 0 165px;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto auto;
+        grid-template-areas: 
+        'title img'
+        'info img'
+        'select img';
     }
 }
