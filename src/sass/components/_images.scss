@@ -52,5 +52,10 @@
                 height: 100%;
             }
         }
+
+        &--tech {
+            height: 100%;
+            grid-area: img;
+        }
     }
 }

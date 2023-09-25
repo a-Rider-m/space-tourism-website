@@ -99,7 +99,12 @@
             width: 15px;
             height: 15px;
         }
-        
+
+        &__circle-number {
+            width: 80px;
+            height: 80px;
+        }
+
         &--destination {
             justify-self: start;
             grid-area: select;
@@ -107,6 +112,11 @@
 
         &--crew {
             justify-self: start;
+            grid-area: select;
+        }
+
+        &--tech {
+            flex-direction: column;
             grid-area: select;
         }
     }

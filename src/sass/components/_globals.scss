@@ -130,3 +130,18 @@ main {
         'select img';
     }
 }
+
+.main--tech {
+    @include a.media-up(lg) {
+        padding: 0 0 0 165px;
+        justify-items: self-end;
+        gap: 0;
+        column-gap: 80px;
+        align-items: center;
+        grid-template-columns: 80px minmax(auto, 470px) 1fr;
+        grid-template-rows: 60px 527px;
+        grid-template-areas: 
+        'title title title'
+        'select info img';
+    }
+}

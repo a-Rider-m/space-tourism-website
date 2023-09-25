@@ -110,7 +110,15 @@
             }
 
             .box-info__h3 {
-                font-size: 5.6rem;
+                font-size: a.$desktop-font-medium-title;
+            }
+        }
+
+        &--tech {
+            grid-area: info;
+
+            .box-info__h3 {
+                font-size: a.$desktop-font-medium-title;
             }
         }
     }
