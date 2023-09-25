@@ -51,8 +51,16 @@
         grid-area: lefttop;
         margin-left: 0;
 
+        &__p {
+            font-size: 2.8rem;
+        }
+
         &__h1 {
             font-size: 2.8rem;
+        }
+        
+        &--destination {
+            grid-area: title;
         }
     }
 }

@@ -92,6 +92,14 @@
         &__p {
             font-size: a.$desktop-font-small;
         }
+
+        &--destination {
+            grid-area: info;
+        }
+
+        &__h2--destination {
+            font-size: 10rem;
+        }
     }
 }
 
@@ -127,5 +135,10 @@
     @include a.media-up(md) {
         grid-template-columns: 1fr 1fr;
         gap: 0;
+    }
+
+    @include a.media-up(lg) {
+        width: 100%;
+        grid-area: subinfo;
     }
 }

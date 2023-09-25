@@ -80,6 +80,32 @@ main {
         margin-top: 80px;
         max-height: 700px;
     }
+
+    @include a.media-up(lg) {
+        justify-self: center;
+        align-self: center;
+        grid-template-areas: 
+        'lefttop right'
+        'left right';
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 22px auto;
+        gap: 24px;
+        align-content: center;
+    }
+}
+
+.main--destination {
+    @include a.media-up(lg) {
+        place-self: center;
+        grid-template-columns: 1fr 472px;
+        grid-template-rows: 98px 34px 250px 130px;
+        grid-template-areas: 
+        'title title'
+        'moon select'
+        'moon info'
+        'moon subinfo';
+        column-gap: 157px;
+    }
 }
 
 .main--crew {

@@ -36,4 +36,14 @@
             }
         }
     }
+
+    @include a.media-up(lg) {
+        &--destination {
+            display: flex;
+            align-self: center;
+            justify-content: center;
+            height: 445px;
+            grid-area: moon;
+        }
+    }
 }

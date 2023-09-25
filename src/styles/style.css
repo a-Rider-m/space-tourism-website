@@ -105,13 +105,6 @@ main {
 }
 @media screen and (min-width: 1024px) {
   main {
-    justify-self: center;
-    align-self: center;
-    grid-template-areas: "lefttop right" "left right";
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 22px auto;
-    gap: 24px;
-    align-content: center;
     max-width: 1444px;
     padding: 0 165px;
     text-align: start;
@@ -125,6 +118,27 @@ main {
   .main--home {
     margin-top: 80px;
     max-height: 700px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main--home {
+    justify-self: center;
+    align-self: center;
+    grid-template-areas: "lefttop right" "left right";
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 22px auto;
+    gap: 24px;
+    align-content: center;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .main--destination {
+    place-self: center;
+    grid-template-columns: 1fr 472px;
+    grid-template-rows: 98px 34px 250px 130px;
+    grid-template-areas: "title title" "moon select" "moon info" "moon subinfo";
+    column-gap: 157px;
   }
 }
 
@@ -308,6 +322,12 @@ main {
   border-radius: 50%;
 }
 .button-explore a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
   text-decoration: none;
   font-size: 2rem;
   font-family: "Bellefair", serif;
@@ -387,6 +407,12 @@ main {
     height: 60px;
   }
 }
+@media screen and (min-width: 1024px) {
+  .buttons-select--destination {
+    justify-self: start;
+    grid-area: select;
+  }
+}
 
 .main-image {
   width: 100%;
@@ -421,6 +447,15 @@ main {
   .main-image--crew img {
     height: 50vh;
     object-fit: cover;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .main-image--destination {
+    display: flex;
+    align-self: center;
+    justify-content: center;
+    height: 445px;
+    grid-area: moon;
   }
 }
 
@@ -470,8 +505,14 @@ main {
     grid-area: lefttop;
     margin-left: 0;
   }
+  .main-title__p {
+    font-size: 2.8rem;
+  }
   .main-title__h1 {
     font-size: 2.8rem;
+  }
+  .main-title--destination {
+    grid-area: title;
   }
 }
 
@@ -557,7 +598,13 @@ main {
     grid-area: left;
   }
   .box-info__p {
-    font-size: 2rem;
+    font-size: 1.8rem;
+  }
+  .box-info--destination {
+    grid-area: info;
+  }
+  .box-info__h2--destination {
+    font-size: 10rem;
   }
 }
 
@@ -590,6 +637,12 @@ main {
   .box-subinfo {
     grid-template-columns: 1fr 1fr;
     gap: 0;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .box-subinfo {
+    width: 100%;
+    grid-area: subinfo;
   }
 }
 

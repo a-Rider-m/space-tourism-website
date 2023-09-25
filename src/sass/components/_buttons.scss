@@ -11,6 +11,12 @@
     justify-self: center;
     border-radius: 50%;
     a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 100%;
+        border-radius: 50%;
         text-decoration: none;
         font-size: 2.0rem;
         font-family: a.$second-font;
@@ -85,6 +91,13 @@
         &__circle-number {
             width: 60px;
             height: 60px;
+        }
+    }
+
+    @include a.media-up(lg) {
+        &--destination {
+            justify-self: start;
+            grid-area: select;
         }
     }
 }
