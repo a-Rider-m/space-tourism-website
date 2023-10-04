@@ -46,12 +46,15 @@
     display: flex;
     justify-self: center;
     gap: 2.6rem;
-    font-size: a.$mobile-font-small;
-    font-family: a.$barlow-condensed;
-    letter-spacing: a.$mobile-letter-space-small;
-    color: a.$primary-color;
     &__button {
         height: 2.8rem;
+        font-size: a.$mobile-font-small;
+        font-family: a.$barlow-condensed;
+        letter-spacing: a.$mobile-letter-space-small;
+        color: a.$primary-color;
+        border: none;
+        background-color: transparent;
+        cursor: pointer;
         &--active {
             color: a.$light-color;
             border-bottom: 3px a.$light-color solid;
@@ -63,6 +66,7 @@
         border-radius: 50%;
         background-color: a.$light-color;
         opacity: 0.17;
+        cursor: pointer;
         &--active {
             opacity: 1;
         }
@@ -73,6 +77,7 @@
         height: 40px;
         border: 1px rgba($color: a.$light-color, $alpha: 0.25) solid;
         border-radius: 50%;
+        cursor: pointer;
         p {
             font-size: a.$mobile-font-medium;
             place-self: center;

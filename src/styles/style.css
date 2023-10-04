@@ -381,13 +381,16 @@ main {
   display: flex;
   justify-self: center;
   gap: 2.6rem;
+}
+.buttons-select__button {
+  height: 2.8rem;
   font-size: 1.4rem;
   font-family: "Barlow Condensed", serif;
   letter-spacing: 0.23rem;
   color: #D0D6F9;
-}
-.buttons-select__button {
-  height: 2.8rem;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
 }
 .buttons-select__button--active {
   color: #FFFFFF;
@@ -399,6 +402,7 @@ main {
   border-radius: 50%;
   background-color: #FFFFFF;
   opacity: 0.17;
+  cursor: pointer;
 }
 .buttons-select__circle--active {
   opacity: 1;
@@ -409,6 +413,7 @@ main {
   height: 40px;
   border: 1px rgba(255, 255, 255, 0.25) solid;
   border-radius: 50%;
+  cursor: pointer;
 }
 .buttons-select__circle-number p {
   font-size: 1.6rem;

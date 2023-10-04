@@ -50,33 +50,29 @@
             <h1 class="main-title__h1">PICK YOUR DESTINATION</h1>
         </div>
         <div class="main-image main-image--destination">
-            <img src="../../assets/destination/image-moon.png" alt="Moon">
+            <img id="destination-img" src="../../assets/destination/image-moon.png" alt="Moon">
         </div>
         <div class="buttons-select buttons-select--destination">
-            <p class="buttons-select__button buttons-select__button--active">MOON</p>
-            <p class="buttons-select__button">MARS</p>
-            <p class="buttons-select__button">EUROPA</p>
-            <p class="buttons-select__button">TITAN</p>
+            <input value="MOON" type="button" id="moon-button" class="selection-buttons buttons-select__button buttons-select__button--active"></input>
+            <input value="MARS" type="button" id="mars-button" class="selection-buttons buttons-select__button"></input>
+            <input value="EUROPA" type="button" id="europa-button" class="selection-buttons buttons-select__button"></input>
+            <input value="TITAN" type="button" id="titan-button" class="selection-buttons buttons-select__button"></input>
         </div>
         <section class="box-info box-info--destination">
-            <h2 class="box-info__h2 box-info__h2--destination">MOON</h2>
-            <P class="box-info__p">See our planet as you’ve never seen it before. 
-                A perfect relaxing trip away to help regain 
-                perspective and come back refreshed. While 
-                you’re there, take in some history by visiting the 
-                Luna 2 and Apollo 11 landing sites.</P>
+            <h2 id="destination-name" class="box-info__h2 box-info__h2--destination">Moon</h2>
+            <P id="destination-descrip" class="box-info__p">See our planet as you’ve never seen it before. A perfect relaxing trip away to help regain perspective and come back refreshed. While you’re there, take in some history by visiting the Luna 2 and Apollo 11 landing sites.</P>
         </section>
         <div class="box-subinfo">
             <div class="box-subinfo__info">
                 <p class="box-subinfo__avg-distance">AVG. DISTANCE</p>
-                <p class="box-subinfo__value">384,400 KM</p>
+                <p id="destination-dist" class="box-subinfo__value">384,400 KM</p>
             </div>
             <div class="box-subinfo__info">
                 <p class="box-subinfo__avg-distance">EST. TRAVEL TIME</p>
-                <p class="box-subinfo__value">3 DAYS</p>
+                <p id="destination-time" class="box-subinfo__value">3 DAYS</p>
             </div>
         </div>
     </main>
-    <script src="../js/index.js"></script>
+    <script type="module" src="../js/index.js"></script>
 </body>
 </html>
