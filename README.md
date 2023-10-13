@@ -20,30 +20,38 @@ During the development of this project, I have faced several challenges that hav
 
 This project is a work in progress, and I am always open to constructive criticism and suggestions that can help me improve the code and optimize its functionality. Any contributions or feedback are welcome and appreciated.
 
+**Project Provided by Frontend Mentors**
+
+I would like to acknowledge that this project was provided by Frontend Mentors, which has been instrumental in enhancing my coding skills and providing me with a valuable learning opportunity.
+
 Thank you for exploring SPACE TOURISM with me!
 
 
 
 # Proyecto SPACE TOURISM
 
-Este proyecto se centra en la exploración y práctica de JavaScript, con un enfoque particular en el consumo de APIs y la manipulación de datos en forma de arrays. Ha sido una experiencia valiosa para aplicar y fortalecer mis habilidades en JavaScript.
+Este proyecto se centra en la exploración y práctica de JavaScript, con un enfoque particular en la consumición de API y la manipulación de datos en forma de arrays. Ha sido una experiencia valiosa para aplicar y fortalecer mis habilidades en JavaScript.
 
-## Retos Superados
+## Desafíos Superados
 
-Durante el desarrollo de este proyecto, me he enfrentado a varios desafíos que me han permitido aprender y crecer como desarrollador. Algunos de los retos que he superado incluyen:
+Durante el desarrollo de este proyecto, me he enfrentado a varios desafíos que me han permitido aprender y crecer como desarrollador. Algunos de los desafíos que he superado incluyen:
 
-1. **Manejo de un proyecto con múltiples pantallas:** Este proyecto me ha brindado la oportunidad de aprender a gestionar y navegar entre diferentes pantallas y componentes de una aplicación web.
+1. **Manejo de un proyecto con múltiples pantallas:** Este proyecto me ha proporcionado la oportunidad de aprender a gestionar y navegar entre diferentes pantallas y componentes de una aplicación web.
 
-2. **Complejidad del proyecto:** SPACE TOURISM se ha convertido en uno de mis proyectos más extensos en términos de líneas de código, lo que ha requerido una estructuración y organización efectiva.
+2. **Complejidad del proyecto:** SPACE TOURISM se ha convertido en uno de mis proyectos más extensos en términos de líneas de código, lo que ha requerido una estructuración y organización eficaz.
 
-3. **División de código en módulos:** Para mejorar la legibilidad y mantenibilidad, he dividido el código en varios archivos y módulos con el fin de estructurar el proyecto de manera lógica y comprensible.
+3. **División del código en módulos:** Para mejorar la legibilidad y mantenibilidad, he dividido el código en varios archivos y módulos para estructurar el proyecto de manera lógica y comprensible.
 
-4. **Consumo de información desde una base de datos:** Este proyecto implica la obtención y manipulación de datos desde una base de datos, lo que ha sido un reto valioso para comprender la integración de datos en aplicaciones web.
+4. **Consumo de datos desde una base de datos:** Este proyecto implica obtener y manipular datos desde una base de datos, lo que ha sido un desafío valioso para comprender la integración de datos en aplicaciones web.
 
-5. **Manipulación del DOM:** La presentación de datos obtenidos desde la base de datos en la interfaz de usuario ha requerido la manipulación eficiente del DOM para lograr una experiencia de usuario atractiva.
+5. **Manipulación del DOM:** Presentar datos obtenidos de la base de datos en la interfaz de usuario ha requerido una manipulación eficiente del DOM para lograr una experiencia de usuario atractiva.
 
 ## Contribuciones y Comentarios
 
-Este proyecto es un trabajo en curso y estoy siempre abierto a críticas constructivas y sugerencias que puedan ayudarme a mejorar el código y optimizar su funcionamiento. Cualquier contribución o comentario es bienvenido y apreciado.
+Este proyecto es un trabajo en progreso, y siempre estoy abierto a críticas constructivas y sugerencias que puedan ayudarme a mejorar el código y optimizar su funcionalidad. Cualquier contribución o comentario es bienvenido y apreciado.
+
+**Proyecto proporcionado por Frontend Mentors**
+
+Me gustaría reconocer que este proyecto fue proporcionado por Frontend Mentors, lo cual ha sido fundamental para mejorar mis habilidades de codificación y proporcionarme una valiosa oportunidad de aprendizaje.
 
 ¡Gracias por explorar SPACE TOURISM conmigo!
