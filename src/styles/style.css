@@ -592,6 +592,7 @@ main {
   font-family: "Bellefair", serif;
   font-weight: 400;
   opacity: 0.25;
+  text-transform: uppercase;
 }
 .box-info__h2--home {
   margin-bottom: 16px;
@@ -617,6 +618,7 @@ main {
   font-size: 2.4rem;
   font-family: "Bellefair", serif;
   font-weight: 400;
+  text-transform: uppercase;
 }
 .box-info__p {
   font-size: 1.5rem;

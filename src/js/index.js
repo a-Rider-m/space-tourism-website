@@ -1,5 +1,5 @@
 import { toggleMobileMenu } from './toggleMobileMenu.js';
-import { info, buttonSelected} from './api.js'; 
+import { info, buttonSelected} from './fetchDataFromAPI.js'; 
 
 const burgerMobileButton = document.querySelector('.header__burger-button');
 const closeMobileButton = document.querySelector('.nav-bar__close-button');
