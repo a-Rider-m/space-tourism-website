@@ -382,7 +382,7 @@ main {
   justify-self: center;
   gap: 2.6rem;
 }
-.buttons-select__button {
+.buttons-select__text-button {
   height: 2.8rem;
   font-size: 1.4rem;
   font-family: "Barlow Condensed", serif;
@@ -392,13 +392,14 @@ main {
   background-color: transparent;
   cursor: pointer;
 }
-.buttons-select__button--active {
+.buttons-select__text-button--active {
   color: #FFFFFF;
   border-bottom: 3px #FFFFFF solid;
 }
 .buttons-select__circle {
   width: 10px;
   height: 10px;
+  border: none;
   border-radius: 50%;
   background-color: #FFFFFF;
   opacity: 0.17;
@@ -411,8 +412,10 @@ main {
   display: grid;
   width: 40px;
   height: 40px;
+  color: #FFFFFF;
   border: 1px rgba(255, 255, 255, 0.25) solid;
   border-radius: 50%;
+  background-color: transparent;
   cursor: pointer;
 }
 .buttons-select__circle-number p {
@@ -433,6 +436,7 @@ main {
   .buttons-select__circle-number {
     width: 60px;
     height: 60px;
+    font-size: 2.4rem;
   }
 }
 @media screen and (min-width: 1260px) {
@@ -443,6 +447,7 @@ main {
   .buttons-select__circle-number {
     width: 80px;
     height: 80px;
+    font-size: 3.2rem;
   }
   .buttons-select--destination {
     justify-self: start;
